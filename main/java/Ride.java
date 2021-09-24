@@ -1,9 +1,27 @@
 public class Ride {
-    public final double distance;
-    public final int time;
+    public double distance;
+    public int time;
+
+    public double getDistance() {
+        return distance;
+    }
+
+    public int getTime() {
+        return time;
+    }
+
+    public void setDistance(double distance) {
+        this.distance = distance;
+    }
+
+    public void setTime(int time) {
+        this.time = time;
+    }
 
     public Ride(double distance, int time) {
+        super();
         this.distance = distance;
         this.time = time;
     }
+
 }

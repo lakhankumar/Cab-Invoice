@@ -1,12 +1,38 @@
 public class InvoiceSummary {
-    private final int numberOfRides;
-    private final double totalFare;
-    private final double averageFare;
+    private int numberOfRides;
+    private double totalFare;
+    private double averageFare;
+
+    public int getNumberOfRides() {
+        return numberOfRides;
+    }
+
+    public double getTotalFare() {
+        return totalFare;
+    }
+
+    public double getAverageFare() {
+        return averageFare;
+    }
+
+    public void setNoOfRides(int numberOfRides) {
+        this.numberOfRides = numberOfRides;
+    }
+
+
+    public void setTotalFare(double totalFare) {
+        this.totalFare = totalFare;
+    }
+
+
+    public void setAverage(double averageFare) {
+        this.averageFare = averageFare;
+    }
 
     public InvoiceSummary(int numberOfRides, double totalFare) {
         this.numberOfRides = numberOfRides;
         this.totalFare = totalFare;
-        this.averageFare = this.totalFare/this.numberOfRides;
+        this.averageFare = this.totalFare / this.numberOfRides;
     }
 
     @Override
