@@ -3,32 +3,6 @@ public class InvoiceSummary {
     private double totalFare;
     private double averageFare;
 
-    public int getNumberOfRides() {
-        return numberOfRides;
-    }
-
-    public double getTotalFare() {
-        return totalFare;
-    }
-
-    public double getAverageFare() {
-        return averageFare;
-    }
-
-    public void setNoOfRides(int numberOfRides) {
-        this.numberOfRides = numberOfRides;
-    }
-
-
-    public void setTotalFare(double totalFare) {
-        this.totalFare = totalFare;
-    }
-
-
-    public void setAverage(double averageFare) {
-        this.averageFare = averageFare;
-    }
-
     public InvoiceSummary(int numberOfRides, double totalFare) {
         this.numberOfRides = numberOfRides;
         this.totalFare = totalFare;
